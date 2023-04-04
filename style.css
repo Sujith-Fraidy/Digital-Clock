@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face
+{
+    font-family: 'digital-7';
+    src:url(digital-7.ttf)
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    background-color: #18181f;
+    color: #838383;
+    user-select: none;
+    cursor: pointer;
+}
+.clock
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'digital-7';
+    font-size: 10rem;
+    margin-bottom: 1.5%;
+    color: #f7931e;
+}
+.colon
+{
+    animation: blink 0.7s ease infinite;
+}
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.meridian span{
+    display: block;
+    font-size: 30px;
+    margin: 15px 0px;
+    font-weight: 600px; 
+    color: #3d3d3d;
+}
+.active{
+    color:#f8a145 !important;
+}
+.days{
+    width: 1100px;
+    margin-bottom: 4%;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.month{
+    margin-top: 3%;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    font-family: 'digital-7';
+    font-size: 4rem;
+    color:	#7fcdee;
+}
+footer{
+    margin-top: auto;
+    align-self: flex-end;
+}
