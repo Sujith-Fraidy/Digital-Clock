@@ -33,7 +33,6 @@ body{
     font-size: 10rem;
     margin-bottom: 1.5%;
     color: #f89225;
-    text-align: left;
 }
 .colon
 {
@@ -79,14 +78,18 @@ body{
 footer{
     margin-top: auto;
     align-self: flex-end;
+    padding: 10px;
+}
+.num{
+    
+    position: relative;
+    text-align: right;
+    min-width: 80px;
 }
 .num::before{
     content:'8';
     color:rgba(80, 80, 80, 0.2);
     position: absolute;
-    min-width: 0px;
-}
-.num{
-    min-width: 90px;
-    position: static;
+    top:0;
+    right: 0;
 }
